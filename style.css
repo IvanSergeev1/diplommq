@@ -1,0 +1,785 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(fonts/OpenSans-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(fonts/OpenSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 55%;
+
+}
+body {
+  margin: 0;
+}
+
+.first-screen {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  padding: 33px 20px 84px 20px;
+  background-image: url(img/football_767.jpg);
+  background-size: cover;
+  background-color:#1c1c3e;
+}
+
+.first-screen::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #040444;
+  opacity: 0.9;
+}
+
+.logo {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 133px;
+  margin: 0 auto 130px;
+  fill:#ffffff;
+}
+ 
+.first-screen__header {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto 83px;
+  width: 260px;
+  font: normal 700 2.8rem/1.2 Open Sans, Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header_second-line {
+  display: block;
+  margin: 20px 0 0 45px;
+}
+
+.download-button-block {
+  position: relative;
+  z-index: 1;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  width: 280px;  
+  height: 35px;
+  margin: 0 auto;
+  text-decoration: none;
+  font: normal 400 0.8rem/1.5 Open Sans, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  color: #ffffff;
+  background-color:#5e42b0;
+  border: 0;
+  border-radius: 30px;
+}
+
+.appstore-icon {
+  width: 20px;
+  height: 24px;
+  margin-right: 10px;
+  margin-left: 82px;
+  fill: #ffffff;
+}
+
+.googleplay-icon {
+  width: 22px;
+  height: 24px;
+  margin-right: 10px;
+  margin-left: 82px;
+  fill: #ffffff;
+}
+
+.download-button:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.button-description-text {
+  min-width: 87px;
+  text-transform: uppercase;
+}
+
+.store-name {
+  display: block;
+  font-weight: bold;
+}
+
+.members {
+  min-width: 320px;
+  padding-top: 15px;
+}
+
+.members h2 {
+  margin: 0 0 5px 0;
+  padding-left: 20px;
+  font: normal 700 5rem/1.2 Open Sans, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #e7e7e7;
+}
+
+.athlets .members__picture {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -60px;
+}
+
+.players .members__picture {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -27px;
+}
+
+.members-advantages {
+  padding: 60px 20px 29px;
+}
+
+.players .collaboration.members-advantages {
+  padding-bottom: 20px;
+}
+
+.players .growth.members-advantages {
+  padding-bottom: 31px;
+  padding-top: 50px;
+}
+
+.members-advantages__header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.connection .members-advantages__header {
+  margin-top: 20px;
+}
+
+.members-advantages__header h3 {
+  margin: 0 10px 26px;
+  font: normal 700 2.3rem/1 Open Sans, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #c1c1c1;
+}
+
+.members-advantages__header__number {
+  position: relative;
+  font: normal 700 1.4rem/1.1 Open Sans, Arial, sans-serif;
+}
+
+.members-advantages__header__number::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 16px;
+  height: 4px;
+  background-color:#5e42b0;
+}
+
+.growth.members-advantages__header__number::after {
+  background-color: #ffffff;
+}
+ 
+.athlets .growth-header-number-color {
+  color: #000000;
+}
+
+.players .growth-header-number-color {
+  color: #8765dd;
+}
+
+.connection {
+  background-color: #fafafa;
+}
+.collaboration {
+  background-color: #f5f4f9;
+}
+.growth {
+  color: #ffffff;
+  background-color: #5e42b0;
+}
+
+.players .growth {
+  background-color: #090c35;
+}
+
+.members-advantages p {
+  margin-top: 0;
+  font: normal 400 1.5rem/1.3 Open Sans, Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.benefits {
+  padding-bottom: 50px;
+  min-width: 320px;
+  font-size: 0;
+}
+
+.benefits__picture {
+  width: 100%;
+  height: 100%
+}
+
+.benefits__header__number {
+  position: relative;
+  display: block;
+  width: 70px;
+  padding: 26px;
+  margin: -60px 0 20px 20px;
+  font: normal 700 1.4rem/1.5 Open Sans, Arial, sans-serif;
+  color: #ffffff;
+  background-color:#5e42b0;
+}
+
+.benefits__header__number::after {
+  content: "";
+  position: absolute;
+  top: 47px;
+  left: 26px;
+  width: 15px;
+  height: 4px;
+  background-color:#8f7bc8;
+}
+
+.benefits h3 {
+  margin: 0 0 7px 20px;
+  font: normal 700 2.8rem/1.2 Open Sans, Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e7e7e7;
+}
+
+.benefits p {
+  margin-top: 0;
+  padding: 0 20px;
+  font: normal 400 1.6rem/1.4 Open Sans, Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.footer {
+  position: relative;
+  padding: 80px 20px 10px;
+  min-width: 320px;
+  text-align: center;
+  background-image: url(img/game_767.jpg);
+  background-size: cover;
+}
+
+.footer::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #040444;
+  opacity: 0.9;
+}
+
+.short-logo__background {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 12px 12px;
+  margin-bottom: 60px;
+  background-color: #6a4cc3;
+  border-radius: 20px;
+}
+
+.short-logo {
+  width: 58px;
+  fill: #ffffff;
+}
+
+.footer h2 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font: normal 700 3.2rem/1.2 Open Sans, Arial, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer p {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  margin-bottom: 75px;
+  font: normal 400 1.4rem/1.4 Open Sans, Arial, sans-serif;
+  color: #9b8ec1;
+  text-transform: uppercase;
+}
+
+.footer .download-button-block {
+  margin-bottom: 80px;
+}
+
+.footer .logo {
+  position: relative; 
+  z-index: 1;
+  margin-bottom: 0px;
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 960px) {
+
+  .first-screen {
+    padding-top: 40px;
+    padding-bottom: 90px;
+    background-image: url(img/football_1280.jpg);
+  }
+
+  .logo {
+      width: 205px;
+      margin-bottom: 160px;
+  }
+
+  .first-screen__header {
+    margin-bottom: 300px;
+    width: 630px;
+    font: normal 700 6.4rem/1.2 Open Sans, Arial, sans-serif;
+    letter-spacing: 5px;
+  }
+
+  .header_second-line {
+    margin: 0 0 0 110px;
+  }
+
+  .download-button-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  .download-button {
+    justify-content: center;
+    width: 41vw;  
+    height: 80px;
+    font: normal 400 1.4rem/1.5 Open Sans, Arial, sans-serif;
+    border-radius: 50px;
+  }
+
+  .download-button:first-child {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+
+  .appstore-icon {
+    width: 36px;
+    height: 42px;
+    margin: 0 30px 0 0;
+  }
+
+  .googleplay-icon {
+    width: 41px;
+    height: 45px;
+    margin: 0 30px 0 0;
+  }
+
+  .button-description-text {
+    min-width: 87px;
+    text-transform: uppercase;
+  }
+
+  .store-name {
+    display: block;
+    font-weight: bold;
+  }
+
+/* Начало блока members */
+
+  .members {
+    position: relative;
+    padding-top: 80px;
+  }
+
+  .athlets h2 {
+    margin-left: 290px;
+    padding: 0;
+    line-height: 1.0;
+    font-size: 8rem;
+  }
+  
+  .members__picture {
+    position: absolute;
+  }
+  
+  .athlets .members__picture {
+    left: -160px;
+    top: 100px;
+  }
+
+  .athlets .members-advantages {
+    padding: 26px 50px 22px 290px;
+  }
+
+  .members-advantages__header h3 {
+    margin-bottom: 30px;
+    font: normal 700 3.2rem/1 Open Sans, Arial, sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .members-advantages__header__number {
+    font: normal 700 1.8rem/1.1 Open Sans, Arial, sans-serif;
+  }
+  
+  .members-advantages__header__number::after {
+    top: 23px;
+    left: 0;
+    width: 20px;
+    height: 4px;
+  }
+
+  .members-advantages p {
+    font: normal 400 1.6rem/1.5 Open Sans, Arial, sans-serif;
+  }
+  
+  .players h2 {
+    padding-left: 20px;
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .players .members__picture {
+    right: 0;
+    top: 40px;
+  }
+  
+  .players .members-advantages {
+    padding: 16px 0 9px 32px;
+  }
+
+  .players .members-advantages p {
+    max-width: 50%;
+  }
+
+/* Начало блока benefits */
+
+  .benefits {
+    padding-bottom: 65px;
+  }
+
+  .benefits__header__number {
+    width: 120px;
+    padding: 46px;
+    margin-top: -80px;
+    margin-left: 32px;
+    margin-bottom: 25px;
+    font: normal 700 2.4rem/1.5 Open Sans, Arial, sans-serif;
+  }
+
+  .benefits__header__number::after {
+    top: 83px;
+    left: 47px;
+    width: 25px;
+    height: 5px;
+  }
+
+  .benefits h3 {
+    margin: 0 0 10px 32px;
+    font: normal 700 8rem/1 Open Sans, Arial, sans-serif;
+  }
+
+  .benefits p {
+    padding: 0 100px 0 32px;
+    font: normal 400 2.4rem/1.5 Open Sans, Arial, sans-serif;
+  }
+
+/* Начало блока footer */
+
+  .footer { 
+    padding: 144px 32px 20px;
+  }
+
+  .short-logo {
+    width: 105px;
+  }
+
+  .short-logo__background {
+    padding: 21px 16px;
+    margin-bottom: 60px;
+    border-radius: 30px;
+  }
+
+  .footer h2 {
+    font: normal 700 8rem/1.2 Open Sans, Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  .footer p {
+    margin-bottom: 280px;
+    font: normal 400 3.6rem/1.2 Open Sans, Arial, sans-serif;
+    text-align: center;
+  }
+
+  .footer .download-button-block {
+    margin-bottom: 55px;
+  }
+}
+
+@media screen and (min-width: 961px) {
+
+  .first-screen {
+    padding: 40px 180px 90px;
+    background-image: url(img/football_1920.jpg);
+  }
+
+  .logo {
+    margin-bottom: 270px;
+    width: 200px;
+  }
+
+  .first-screen__header {
+    width: 100%;
+    max-width: 1740px;
+    margin-bottom: 200px;
+    font: normal 700 9rem/1.2 Open Sans, Arial, sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .header_second-line {
+    display: block;
+    margin: 0;
+    text-align: right;
+  }
+
+  .download-button-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  .download-button {
+    justify-content: center;
+    width: 310px;  
+    height: 80px;
+    margin: 0;
+    font: normal 400 1.4rem/1.5 Open Sans, Arial, sans-serif;
+    border-radius: 50px;
+  }
+
+  .download-button:first-child {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+
+  .appstore-icon {
+    width: 36px;
+    height: 42px;
+    margin: 0 30px 0 0;
+  }
+
+  .googleplay-icon {
+    width: 41px;
+    height: 45px;
+    margin: 0 30px 0 0;
+  }
+
+  .button-description-text {
+    min-width: 87px;
+    text-transform: uppercase;
+  }
+
+  .store-name {
+    display: block;
+    font-weight: bold;
+  }
+
+/* Начало блока members */
+
+  .members {
+    position: relative;
+    padding-top: 115px;
+  }
+
+  .athlets h2 {
+    margin-left: 0;
+    padding-left: 53%;
+    font-size: 8rem;
+  }
+  
+  .athlets .members__picture {
+    position: absolute;
+    right: 50%;
+    top: 34px;
+  }
+
+  .athlets .members-advantages {
+    padding: 50px 180px 20px 53%;
+  }
+  
+  .members-advantages__header h3 {
+    margin-bottom: 10px;
+    font: normal 700 3.6rem/1 Open Sans, Arial, sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .members-advantages__header__number {
+    font: normal 700 1.8rem/1.1 Open Sans, Arial, sans-serif;
+  }
+  
+  .members-advantages__header__number::after {
+    top: 23px;
+    left: 0;
+    width: 20px;
+    height: 4px;
+  }
+  
+  .members-advantages p {
+    max-width: 650px;
+    margin-bottom: 30px;
+    font: normal 400 2rem/1.5 Open Sans, Arial, sans-serif;
+  }
+
+  .players.members {
+    overflow: hidden;
+  }
+
+  .players h2 {
+    margin-left: 0;
+    padding-left: 15%;
+    font-size: 8rem;
+  }
+  
+  .players .members__picture {
+    position: absolute;
+    left: 42%;
+    top: 34px;
+  }
+
+  .players .members-advantages {
+    padding: 60px 10% 30px;
+  }
+
+  .benefits {
+    display: flex;
+    padding-bottom: 0;
+  }
+
+  .benefits-header__wrapper {
+    position: relative;
+    width: 50%;
+  }
+  
+  .benefits-content__wrapper {
+    width: 50%;
+  }
+  
+  .benefits__picture {
+    display: block;
+    width: 100%;
+  }
+  
+  .benefits__header__number {
+    position: absolute;
+    display: inline-block;
+    padding: 60px;
+    right: -70px;
+    top: 36%;
+    margin: 0;
+    width: auto;
+    font-size: 2.4rem;
+  }
+  
+  .benefits__header__number::after {
+    width: 27px;
+    height: 6px;
+    top: 94px;
+    left: 59px;
+  }
+  
+  .benefits-content__wrapper {
+    padding-left: 90px;
+    padding-top: 14%;
+  }
+  
+  .benefits h3 {
+    font-size: 8rem;
+    margin-bottom: 84px;
+  }
+  
+  .benefits p {
+    font-size: 2.4rem;
+  }
+
+  .contact .benefits-content__wrapper {
+    padding-left: 10px;
+    padding-right: 80px;
+  }
+
+  .benefits.contact {
+    flex-direction: row-reverse;
+  }
+
+  .contact .benefits__header__number {
+    position: absolute;
+    display: inline-block;
+    padding: 60px;
+    left: -70px;
+    right: auto;
+    top: 30%;
+    margin: 0;
+    width: auto;
+    font-size: 2.4rem;
+  }
+
+  .footer {
+    padding: 325px 32px 50px;
+    background-image: url(img/game_1920.jpg);
+  }
+
+  .short-logo__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 160px;
+  }
+
+  .short-logo {
+    width: 105px;
+  }
+
+  .short-logo__background {
+    padding: 21px 16px;
+    margin-right: 35px;
+    margin-bottom: 0px;
+    border-radius: 30px;
+  }
+
+  .slogan-wrapper {
+    text-align: left;
+  }
+
+  .footer h2 {
+    font-size: 8rem;
+    margin-left: -4px;
+  }
+
+  .footer p {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .footer .download-button-block {
+    margin-bottom: 260px;
+  }
+
+}
